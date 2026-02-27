@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+body{
+    background-color:  #1A0B2E;
+    font-family:'inter', sans-serif;
+}
+
+.navber{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
