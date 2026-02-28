@@ -261,3 +261,67 @@ body{
         padding:40px 20px;
     }
 }
+
+/* meet the host part */
+.meet_host h4{
+    text-align: center;
+}
+.meet_host{
+    padding:40px 200px;
+}
+.meethost_container{
+    display:grid;
+    grid-template-columns: 200px 1fr;
+    gap:24px;
+    margin-top:40px;
+    padding:40px;
+    background-color: #351165;
+    border-radius: 40px;
+}
+.host_info{
+    text-align: left;
+}
+
+.host_info h6{
+    margin-bottom: 16px;
+}
+.social_media{
+    display:flex;
+    gap:12px;
+    padding-top:16px;
+}
+
+.social_icons{
+    width:40px;
+    height:40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;   
+}
+
+.social_icons img{
+    width:20px;
+    height:20px;
+}
+
+@media screen and (max-width:576px) {
+    .meethost_container {
+        grid-template-columns: 1fr;      
+    }
+    .host_info{
+        text-align: center;
+    }
+    .meet_host{
+        padding:40px 20px;
+    }
+
+    .social_media {
+        justify-content: center; 
+    }
+
+    .host_img {
+        margin: 0 auto; 
+    }
+}
