@@ -4,6 +4,7 @@ body{
     background-color:  #1A0B2E;
     font-family:'inter', sans-serif;
     margin:0;
+    overflow-x: hidden;
 }
 
 /* header */
@@ -98,5 +99,165 @@ body{
     .img_div {
         width: 200px;
         height: 200px;
+    }
+}
+
+
+/* about podcast */
+
+@media screen and (max-width:576px){
+    .about_section{
+        padding:40px 20px;
+        width:100%;
+        margin:0 auto;
+    }
+
+    .mobile{
+        display:none;
+    }
+}
+
+/* cards */
+.cards{
+    margin-bottom: 120px;
+}
+@media screen and (max-width:576px){
+    .cards{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 0 20px;
+    }
+}
+
+/* why choose section */
+
+.why_choose{
+    background-color: #230E3D;
+    padding:120px 200px;
+
+}
+
+.container{
+    margin-top: 40px;
+    display:grid;
+    gap:30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+   
+}
+
+.box{
+    background-color: #351165;
+    border-radius: 40px;
+    padding:40px;
+    gap:16px;
+
+}
+
+.box img{
+    margin-bottom: 16px;
+}
+
+.box h6{
+    margin-bottom: 16px;
+}
+
+.box p{
+    margin-bottom: 16px;
+}
+.why_choose h4{
+    text-align: center;
+}
+
+#audio{
+    grid-row: span 2;
+    padding-top: 112px;
+}
+
+#interview{
+    grid-column: span 2;
+}
+
+#mobile{
+    grid-column: span 2;
+}
+
+#community{
+    grid-column: span 2;
+}
+
+@media screen and (max-width:576px){
+    .why_choose{
+        padding:40px 20px;
+    }
+
+    .container{
+        grid-template-columns: 1fr;
+    }
+    
+    #audio{
+        grid-column: span 1;
+        padding-top: 40px;
+        grid-row: span 1;
+
+    } 
+
+    #interview,
+    #mobile,
+    #community{
+        grid-column: span 1;
+        padding-top: 40px;
+    }
+}
+
+/* featured episodes */
+.featured_episodes{
+    padding:120px 200px;
+}
+
+.featured_episodes h4{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.featured_container{
+    max-width:1200px;
+    margin:0 auto;
+    display:grid;
+    gap:30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.featured_card{
+    background-color:#351165;
+    border-radius:24px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    overflow:hidden;
+}
+
+.featured_container h6{
+    padding:10px 24px 5px 24px;
+}
+
+.featured_card p{
+    padding:0px 24px 24px 24px;
+}
+
+
+.featured_card iframe{
+    padding:0px;
+    width:100%;
+    aspect-ratio:16/9;
+    display:block;
+}
+
+@media screen and (max-width:576px){
+    .featured_container{
+        grid-template-columns: 1fr;
+    }
+    .featured_episodes{
+        padding:40px 20px;
     }
 }
