@@ -10,12 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="h-8 px-[200px]">
+    <header class="py-0 px-4 md:px-[200px]">
       <nav class="navber">
         <h2 class="text-3xl text-white">
           Tech<span
@@ -28,8 +31,32 @@
           <li>Episodes</li>
           <li>Host</li>
         </ul>
-        <button class="h-11 w-[135px] p-4 gap-1.5 bg-linear-65 from-purple-500 to-pink-500 rounded-full text-white flex items-center justify-center">subscribe<i class="fa-solid fa-arrow-right"></i></button>
+        <button
+          class="h-11 w-[135px] p-4 gap-1.5 bg-linear-65 from-purple-500 to-pink-500 rounded-full text-white flex items-center justify-center"
+        >
+          subscribe<i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <span class="icon"><i class="fa-solid fa-bars text-white"></i></span>
       </nav>
     </header>
+
+    <section class="teckwave">
+        <div class="img_div">
+            <img src="assets/hero-circle.png" alt="" class="gradient_circle">
+            <img src="assets/microphone.png" alt="" class="microphone">
+            <div class="badge">New</div>
+        </div>
+      <div class="teckwave_writings">
+        <h6 class="text-6xl font-extrabold text-white">Teckwave</h6>
+        <p class="text-base font-normal text-white opacity-80 mt-2">
+          Your daily dose of tech insights, productivity hacks, and personal
+          growth
+        </p>
+        <div class=" btn_class flex gap-1 justify-center mt-6">
+        <button class="h-11 w-[210px] gap-1.5 bg-linear-65 from-purple-500 to-pink-500 rounded-full text-white flex items-center justify-center"><i class="fa-brands fa-spotify"></i>Listen on Spotify</button>
+        <button class="h-11 w-[147px] gap-1.5 rounded-full border border-green-500 text-green-500 bg-clip-text font-semibold flex items-center justify-center"><i class="fa-regular fa-envelope"></i>Subscribe</button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
