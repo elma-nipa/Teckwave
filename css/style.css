@@ -82,6 +82,11 @@ body{
     font-weight: 400;
 }
 
+/* animations in listen to spotify btn */
+.listen:hover {
+  transform: scale(1.7);
+}
+
 @media screen and (max-width:576px){
   .teckwave {
       height:466px;
@@ -242,7 +247,7 @@ body{
 }
 
 .featured_card p{
-    padding:0px 24px 24px 24px;
+    padding:0px 24px 12px 24px;
 }
 
 
@@ -325,3 +330,28 @@ body{
         margin: 0 auto; 
     }
 }
+
+/* footer */
+
+footer {
+    background-color: #351165;
+    margin-top:120px;
+    min-height:412px;
+    height:auto;
+    background-image: url("../assets/footer-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+}
+
+@media screen and (max-width:576px) {
+    footer {
+        margin-top:40px;
+        min-height: auto;
+        height: auto;
+        padding: 20px;
+    }
+
+}
+
